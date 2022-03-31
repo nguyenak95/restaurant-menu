@@ -1,0 +1,52 @@
+.itemImg {
+  object-fit: fit;
+  width: 100%;
+  height: 100%;
+}
+.label {
+  font-size: 24px;
+  letter-spacing: 0.5rem;
+}
+
+.infoLayout {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.info {
+  height: 610px;
+  padding: 1.5rem;
+  padding-top: 3rem
+}
+.actionButton {
+  background: lightgrey;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity {
+  position: relative;
+  background: white;
+
+  div {
+    text-align: center;
+    border: 1px solid black;
+  }
+  input, input:focus {
+      border: none;
+      outline: none;
+  }
+  span {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  span:first-child {
+    left: 3px;
+  }
+  span:last-child {
+    right: 3px
+  }
+}

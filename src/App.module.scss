@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'bodoni';
+  src:  url('./assets/fonts/Bonica.woff2') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'bodoni';
+  src:  url('./assets/fonts/Bonica\ Bold.woff2') format('woff2');
+  font-weight: bold;
+        
+}
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.app {
+  height: 100vh;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

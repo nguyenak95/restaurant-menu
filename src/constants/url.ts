@@ -1,0 +1,1 @@
+export const RESTAURANT_API="https://atlas-fe-menu.atlas-kitchen.workers.dev/"
