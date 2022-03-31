@@ -36,9 +36,15 @@ const Product = (props: ProductProps) => {
         <div className={styles.itemPrice}>
           <div>{`${item.currency} ${item.unitPriceFractional / 1000}`}</div>
           <div>
-            <Button danger type="primary">
-              Add
-            </Button>
+            {item.itemStock.quantityLeft > 0 ? (
+              <Button danger type="primary">
+                Add
+              </Button>
+            ) : (
+              <Button danger type="primary" style={{ opacity: 0.5 }}>
+                Sold out
+              </Button>
+            )}
           </div>
         </div>
       </Col>
